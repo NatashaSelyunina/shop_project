@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <title>Личный кабинет</title>
+    <style>
+      .profile-info {
+        .name {
+          font-size: 1.5rem;
+          color: blue;
+        }
+        .id,
+        .email {
+          font-size: 1.2rem;
+          color: green;
+        }
+        .id,
+        .email:nth-child(1) {
+          font-weight: bold;
+        }
+        .about-header {
+          font-size: 1.3rem;
+          font-weight: bolder;
+          color: burlywood;
+        }
+        .about-text {
+          font-style: italic;
+        }
+      }
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+          background-color: #dc3545;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-3">
+          <div
+            class="nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <a
+              class="nav-link"
+              id="profileTab"
+              data-toggle="pill"
+              href="#v-pills-profile"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+              >Профиль</a
+            >
+            <a
+              class="nav-link"
+              id="messagesTab"
+              data-toggle="pill"
+              href="#v-pills-messages"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+              >Сообщения</a
+            >
+            <a
+              class="nav-link"
+              id="settingsTab"
+              data-toggle="pill"
+              href="#v-pills-settings"
+              role="tab"
+              aria-controls="v-pills-settings"
+              aria-selected="false"
+              >Настройки</a
+            >
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHBlcnNvbmF8ZW58MHx8MHx8fDA%3D&w=250&q=70" alt="">
+                </div>
+                <div class="col-sm-8 profile-info">
+                  <h2 class="name">Василий Васечкин</h2>
+                  <p class="id">ID: <span>5</span></p>
+                  <p class="email">Email <span>vasya@mail.ru</span></p>
+                  <p class="about-header">История о себе</p>
+                  <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa ex cupiditate deserunt voluptate, ipsum nihil doloremque est laboriosam recusandae, error, sunt quo provident. Nemo doloribus porro nesciunt sit eaque.</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+            >
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="media mb-4 border-bottom border-warning">
+                    <img src="../../img/r12.jpg" alt="" class="mr-3">
+                    <div class="media-body">
+                      <h5 class="mt-0">Валерий Ольшанский</h5>
+                      <p>Завтра жду на футболе, давай в 18.30</p>
+                    </div>
+                  </div>
+
+                  <div class="media mb-4 border-bottom border-warning">
+                    <img src="../../img/r2.jpg" alt="" class="mr-3">
+                    <div class="media-body">
+                      <h5 class="mt-0">Михалыч</h5>
+                      <p>Да, на рыбалку едем точно! Удочки брать?</p>
+                    </div>
+                  </div>
+
+                  <div class="media mb-4 border-bottom border-warning">
+                    <img src="../../img/r3.jpg" alt="" class="mr-3">
+                    <div class="media-body">
+                      <h5 class="mt-0">Палыч работа</h5>
+                      <p>Ресторан за тобой</p>
+                    </div>
+                  </div>
+
+                  <div class="media border-bottom border-warning">
+                    <img src="../../img/r5.jpg" alt="" class="mr-3">
+                    <div class="media-body">
+                      <h5 class="mt-0">Мария Михайловна</h5>
+                      <p>Не забудьте до пятницы прислать договор</p>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="col-md-7">
+                  <div class="row mb-3">
+                    <div class="col-12">
+                      <div class="media mb-2">
+                        <img src="../../img/r5.jpg" alt="" class="mr-3">
+                        <div class="media-body">
+                          <h5 class="mt-0">Мария Михайловна</h5>
+                          <p>Не забудьте до пятницы прислать договор</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="media">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHBlcnNvbmF8ZW58MHx8MHx8fDA%3D&w=250&q=70" alt="" class="mr-3" width="70">
+                        <div class="media-body">
+                          <h5 class="mt-0">Я</h5>
+                          <p>Обязательно, уже почти все готово</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-9 ml-auto mb-5">
+                      <textarea class="form-control" rows="5" placeholder="Текст сообщения"></textarea>
+                    </div>
+                    <div class="col-9 ml-auto">
+                      <button class="btn btn-block btn-danger">Отправить сообщение</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+              <div class="container-fluid p-5 mt-5">
+                <div class="col-6 btn btn-info mb-5">Сделать лучше</div>
+                <div class="col-6 btn btn-info">Сделать шедевр</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let pathname = location.pathname.split("/")[2];
+
+      if (pathname == "profile") {
+        $("#v-pills-profile").tab("show");
+      } else if (pathname == "messages") {
+        $("#v-pills-messages").tab("show");
+      } else if (pathname == "settings") {
+        $("#v-pills-settings").tab("show");
+      } else {
+        location.href = location.protocol + "//" + location.host;
+      }
+
+      document.getElementById(pathname + "Tab").classList.add("active");
+
+      let navLinks = document.querySelectorAll(".nav-link");
+
+      for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click", () => {
+          let page = navLinks[i].getAttribute("aria-controls").split("v-pills-")[1];
+          console.log(page);
+          history.pushState("", "", page);
+        });
+      }
+    </script>
+  </body>
+</html>
